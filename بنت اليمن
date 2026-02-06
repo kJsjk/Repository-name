@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yemen Touch | لمسة يمنية أصيلة</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f3ee;
+  color: #3b2f2f;
+}
+header {
+  background: #6b4e2e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.lang-switch {
+  text-align: center;
+  margin: 10px;
+}
+.lang-switch button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #c9a24d;
+  color: #fff;
+  cursor: pointer;
+}
+section {
+  padding: 30px;
+  text-align: center;
+}
+.products div {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  background: #6b4e2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer {
+  background: #3b2f2f;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+.hidden { display: none; }
+</style>
+
+<script>
+function showLang(lang) {
+  document.getElementById("ar").classList.add("hidden");
+  document.getElementById("en").classList.add("hidden");
+  document.getElementById(lang).classList.remove("hidden");
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <h1>Yemen Touch</h1>
+  <p>لمسة يمنية أصيلة | Authentic Yemeni Touch</p>
+</header>
+
+<div class="lang-switch">
+  <button onclick="showLang('ar')">العربية</button>
+  <button onclick="showLang('en')">English</button>
+</div>
+
+<!-- Arabic -->
+<div id="ar">
+<section>
+  <h2>مرحبا بكم</h2>
+  <p>
+    متجر تديره بنت يمنية لبيع المنتجات اليمنية الأصلية  
+    <br>توصيل داخل الولايات المتحدة 🇺🇸
+  </p>
+</section>
+
+<section class="products">
+  <h2>منتجاتنا</h2>
+  <div>🍯 العسل اليمني الأصيل</div>
+  <div>💍 خواتم العقيق الطبيعي</div>
+  <div>🗡️ الجنابي اليمنية</div>
+  <div>🧵 الأحزمة التراثية</div>
+</section>
+
+<section>
+  <h2>من نحن</h2>
+  <p>
+    Yemen Touch مشروع يمني يهدف إلى نقل تراث اليمن  
+    وجودته الأصيلة إلى داخل أمريكا بأسلوب راقٍ وبسيط.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>التواصل</h2>
+  <a href="https://wa.me/17739155659">تواصل واتساب</a>
+  <a href="tel:+17739155659">اتصل الآن</a>
+</section>
+</div>
+
+<!-- English -->
+<div id="en" class="hidden">
+<section>
+  <h2>Welcome</h2>
+  <p>
+    Yemeni-owned store offering authentic Yemeni products  
+    <br>Delivery across the USA 🇺🇸
+  </p>
+</section>
+
+<section class="products">
+  <h2>Our Products</h2>
+  <div>🍯 Premium Yemeni Honey</div>
+  <div>💍 Natural Agate Rings</div>
+  <div>🗡️ Traditional Jambiyas</div>
+  <div>🧵 Yemeni Belts</div>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p>
+    Yemen Touch is a heritage-inspired brand bringing authentic Yemeni products  
+    to customers across the United States.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <a href="https://wa.me/17739155659">WhatsApp</a>
+  <a href="tel:+17739155659">Call Now</a>
+</section>
+</div>
+
+<footer>
+  © 2026 Yemen Touch – All Rights Reserved
+</footer>
+
+</body>
+</html>
